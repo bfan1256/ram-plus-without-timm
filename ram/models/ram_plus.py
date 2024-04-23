@@ -331,7 +331,7 @@ class RAM_plus(nn.Module):
         for b in range(bs):
             index = np.argwhere(tag[b] == 1)
             token = self.tag_list[index].squeeze(axis=1)
-            tag_output.append(token)
+            tag_output.append(token.tolist())
         return tag_output
 
     def generate_tag_openset(self,
