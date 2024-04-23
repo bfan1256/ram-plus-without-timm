@@ -11,7 +11,7 @@ from scipy import interpolate
 import torch
 import torch.nn as nn
 import torch.utils.checkpoint as checkpoint
-from timm.models.layers import DropPath, to_2tuple, trunc_normal_
+from .timm_helpers import to_2tuple, trunc_normal_, DropPath
 
 
 class Mlp(nn.Module):
