@@ -25,6 +25,8 @@ to_3tuple = _ntuple(3)
 to_4tuple = _ntuple(4)
 to_ntuple = _ntuple
 
+def download_cached_file(url):
+    return None
 
 def trunc_normal_(tensor, mean=0., std=1., a=-2., b=2.):
     # type: (Tensor, float, float, float, float) -> Tensor
